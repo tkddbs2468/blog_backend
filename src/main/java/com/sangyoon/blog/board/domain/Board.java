@@ -1,7 +1,5 @@
 package com.sangyoon.blog.board.domain;
 
-import java.sql.Timestamp;
-
 import com.sangyoon.blog.common.domain.BaseDomain;
 
 import jakarta.persistence.Column;
@@ -19,6 +17,7 @@ public class Board extends BaseDomain{
 	
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long id;
     
     @Column(nullable = false)
     private String title;
